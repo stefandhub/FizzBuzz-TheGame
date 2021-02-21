@@ -1,0 +1,169 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ff7d04;
+}
+
+/*HOMEPAGE*/
+h1{
+    background-color: white;
+    
+    height: 120px;
+    border-radius: 50%;
+    color: #000FFF;
+    font-size: 46px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;    
+    text-shadow: 6px 5px 7px rgba(150, 150, 150, 1);
+    
+    font-family: 'Righteous', cursive;
+}
+h1 span {
+    color: #FFF000 ;
+    font-weight: bolder;
+    -webkit-text-stroke: 0.1px black; 
+}
+#subtitle {
+    font-size: 30px;
+    color: #000FFF;
+    -webkit-text-stroke: initial;
+}
+
+/*input Name*/
+.input__name {
+    margin-top: 40px;
+    min-width: 40%;
+    text-align: center;
+}
+#insert__name {
+    min-width: 60%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+}
+
+#confirm {
+    height: 40px;
+    min-width: 10%;
+    border: none;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+}
+
+/*select difficulty*/
+#select__difficulty {
+    min-width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    display: none;
+}
+#select__difficulty a {
+    min-width: 29%;
+    margin: 0px 10px;
+    
+}
+
+.difficulty__button {
+    height: 80px;
+    min-width: 100%;
+    border-radius: 10px;
+    border: none;
+    background-color: red;
+    color: white;
+
+}
+
+#welcome__message {
+    color: #000FFF;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    margin-top: 30px;
+    width: 40%;
+    background-color: white;
+    border-radius: 4px;
+}
+
+/*main page*/
+.main__page__logo {
+    text-decoration: none;
+}
+#print__section {
+    min-width: 300px;
+    height: fit-content;
+    line-height: 40px;
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    color: #000FFF;
+    border-radius: 5px;
+    border: solid 2px black;
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: 4px 3px 5px rgba(150, 150, 150, 1);
+    font-family: 'Righteous', cursive;
+} 
+#start__fizzbuzz {
+    width: 70px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: red;
+    color: white;
+}
+#start__fizzbuzz:hover {
+    cursor: pointer;
+}
+#you__lose {
+    display: none;
+    font-size: 36px;
+    width: 400px;
+    height: 40px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    color: black;
+    margin-bottom: 40px;
+  }
+  
+  #try__again__btn {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: red;
+    color: white;
+    display: none;
+    margin-top: 40px;
+    text-decoration: none;
+  }
+  #try__again__btn:hover {
+      cursor: pointer;
+  }
+
+  #insert__num {
+      margin-top: 40px;
+      text-align: center;
+      margin-bottom: 40px;
+      height: 40px;
+      font-size: 24px;
+      border-radius: 5px;
+      border: none;
+      
+      
+  }
+
+  .instructions {
+      text-align: center;
+      font-family: 'Righteous', cursive;
+      font-size: 18px;
+      color: white;
+      margin-top: 40px;
+      margin-bottom: 40px;
+  }
