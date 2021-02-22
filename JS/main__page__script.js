@@ -82,6 +82,7 @@ var startTimer = document.getElementById("start__fizzbuzz");
 startTimer.addEventListener("click", startCountdown);
 
 function startCountdown() {
+  insertedNumber.style.display ="block";
   startTimer.style.display = "none";
   var timeleft = 20;
   var downloadTimer = setInterval(function function1() {
