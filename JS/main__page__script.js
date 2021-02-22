@@ -89,7 +89,10 @@ function startCountdown() {
       timeleft + " " + "seconds remaining";
 
     timeleft -= 1;
-    if (timeleft <= 0) {
+    if (timeleft > 0 && timeleft < 10) {
+      countdown.style.color = "red";
+    }
+    else if (timeleft < 0) {
       clearInterval(downloadTimer);
       document.getElementById("countdown").innerHTML = "Time is up!";
       var youLose = document.getElementById("you__lose");
