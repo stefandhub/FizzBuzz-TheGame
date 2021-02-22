@@ -26,8 +26,9 @@ function fizzBuzz() {
 }*/
 
 
-var startFizzBuzz = document.getElementById("start__fizzbuzz");
+var startFizzBuzz = document.getElementById("confirm__input");
 startFizzBuzz.addEventListener("click", checkNumber);
+startFizzBuzz.addEventListener("click", startCountdown);
 
 var numberToCheck = "";
 var i = 0;
@@ -71,5 +72,34 @@ function fizzBuzz() {
     insertedNumber.style.display = "none";
     startFizzBuzz.style.display = "none";
     tryAgain.style.display = "block";
+    countdown.style.display = "none";
   }
 }
+
+
+//function to start timer
+var startTimer = document.getElementById("start__fizzbuzz");
+startTimer.addEventListener("click", startCountdown);
+
+function startCountdown() {
+  startTimer.style.display = "none";
+  var timeleft = 20;
+  var downloadTimer = setInterval(function function1() {
+    document.getElementById("countdown").innerHTML =
+      timeleft + " " + "seconds remaining";
+
+    timeleft -= 1;
+    if (timeleft <= 0) {
+      clearInterval(downloadTimer);
+      document.getElementById("countdown").innerHTML = "Time is up!";
+      var youLose = document.getElementById("you__lose");
+      youLose.style.display = "block";
+      insertedNumber.style.display = "none";
+      startFizzBuzz.style.display = "none";
+      tryAgain.style.display = "block";
+    }
+  }, 1000);
+
+  console.log(countdown);
+};
+
