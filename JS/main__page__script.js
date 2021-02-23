@@ -35,11 +35,11 @@ var i = 0;
 function checkNumber() {
   i++;
   if (i % 3 == 0 && i % 5 == 0) {
-    numberToCheck = "FIZZBUZZ";
+    numberToCheck = "fizzbuzz";
   } else if (i % 3 == 0) {
-    numberToCheck = "FIZZ";
+    numberToCheck = "fizz";
   } else if (i % 5 == 0) {
-    numberToCheck = "BUZZ";
+    numberToCheck = "buzz";
   } else {
     numberToCheck = i;
   }
