@@ -26,7 +26,9 @@ Write the correct number or the relative word to win.
 -
 -Different difficulty levels;
 
--A section to record highscores.
+-A section to record highscores;
+
+-graphic improvements and animations to make everything more attractive.
 
 **Link to the deploy**
 -
