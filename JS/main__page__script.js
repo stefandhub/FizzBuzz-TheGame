@@ -28,7 +28,7 @@ function fizzBuzz() {
 
 var startFizzBuzz = document.getElementById("confirm__input");
 startFizzBuzz.addEventListener("click", checkNumber);
-startFizzBuzz.addEventListener("click", startCountdown);
+
 
 var numberToCheck = "";
 var i = 0;
@@ -80,12 +80,14 @@ function fizzBuzz() {
 //function to start timer
 var startTimer = document.getElementById("start__fizzbuzz");
 startTimer.addEventListener("click", startCountdown);
+startFizzBuzz.addEventListener("click", refreshCountdown);
 
+var timeleft = 20;
 function startCountdown() {
   insertedNumber.style.display ="block";
   startTimer.style.display = "none";
-  var timeleft = 20;
-  var downloadTimer = setInterval(function function1() {
+  
+  var Timer = setInterval(function function1() {
     document.getElementById("countdown").innerHTML =
       timeleft + " " + "seconds remaining";
 
@@ -94,7 +96,7 @@ function startCountdown() {
       countdown.style.color = "red";
     }
     else if (timeleft < 0) {
-      clearInterval(downloadTimer);
+      clearInterval(Timer);
       document.getElementById("countdown").innerHTML = "Time is up!";
       var youLose = document.getElementById("you__lose");
       youLose.style.display = "block";
@@ -103,7 +105,10 @@ function startCountdown() {
       tryAgain.style.display = "block";
     }
   }, 1000);
-
-  console.log(countdown);
 };
+
+function refreshCountdown() {
+  timeleft = 20;
+  countdown.style.color = "white";
+}
 
